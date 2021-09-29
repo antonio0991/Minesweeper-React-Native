@@ -5,23 +5,18 @@ export default props => {
   return (
     <View style={styles.container}>
       <View
-        style={[
-          styles.flagpole,
-          props.bigger ? styles.flagpoleBigger : null,
-        ]}></View>
-      <View
-        style={[styles.flag, props.bigger ? styles.flagBigger : null]}></View>
-      <View
-        style={[styles.base1, props.bigger ? styles.base1Bigger : null]}></View>
-      <View
-        style={[styles.base2, props.bigger ? styles.base2Bigger : null]}></View>
+        style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : null]}
+      />
+      <View style={[styles.flag, props.bigger ? styles.flagBigger : null]} />
+      <View style={[styles.base1, props.bigger ? styles.base1Bigger : null]} />
+      <View style={[styles.base2, props.bigger ? styles.base2Bigger : null]} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 2,
+    marginTop: 5,
   },
   flagpole: {
     position: 'absolute',
@@ -32,8 +27,8 @@ const styles = StyleSheet.create({
   },
   flag: {
     position: 'absolute',
-    height: 5,
-    width: 6,
+    height: 10,
+    width: 1,
     backgroundColor: '#F22',
     marginLeft: 3,
   },
@@ -56,23 +51,25 @@ const styles = StyleSheet.create({
   flagpoleBigger: {
     height: 28,
     width: 4,
-    marginLeft: 16,
+    marginLeft: 24,
+    marginTop: 6,
   },
   flagBigger: {
     height: 10,
-    width: 7,
+    width: 15,
+    marginTop: 6,
     marginLeft: 10,
   },
   base1Bigger: {
     height: 4,
     width: 12,
-    marginTop: 20,
-    marginLeft: 12,
+    marginTop: 26,
+    marginLeft: 20,
   },
   base2Bigger: {
     height: 4,
     width: 20,
-    marginTop: 24,
-    marginLeft: 8,
+    marginTop: 30,
+    marginLeft: 16,
   },
 });
